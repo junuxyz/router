@@ -1,0 +1,258 @@
+{
+  "timestamp": "2025-11-20T15:02:37.862191",
+  "experiment_config": {
+    "thresholds": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "best_threshold": 0.3,
+    "weighted_loss": true,
+    "class_weights": [
+      1.0,
+      3.0
+    ],
+    "include_uncertainty": true
+  },
+  "baselines": {
+    "always_small": {
+      "accuracy": 0.3993085566119274,
+      "cost": 0.0
+    },
+    "always_big": {
+      "accuracy": 0.9844425237683665,
+      "cost": 1.0
+    },
+    "oracle": {
+      "accuracy": 1.0,
+      "cost": 0.6006914433880726
+    }
+  },
+  "threshold_experiments": {
+    "threshold_0.1": {
+      "metrics": {
+        "cascade_acc": 0.9801210025929127,
+        "oracle_acc": 1.0,
+        "always_big_acc": 0.9844425237683665,
+        "always_small_acc": 0.3993085566119274,
+        "big_call_rate": 0.9619706136560069,
+        "oracle_big_rate": 0.6006914433880726,
+        "accuracy_gap_from_oracle": 0.019878997407087293,
+        "accuracy_gain_vs_small": 0.5808124459809854,
+        "accuracy_gap_vs_big": 0.00432152117545376,
+        "cost_saving_vs_always_big": 0.03802938634399311,
+        "cost_overhead_vs_oracle": 0.3612791702679343,
+        "true_positives": 690,
+        "false_positives": 423,
+        "true_negatives": 39,
+        "false_negatives": 5,
+        "precision": 0.6199460916442049,
+        "recall": 0.9928057553956835,
+        "f1": 0.763274336283186,
+        "threshold": 0.1
+      },
+      "threshold": 0.1
+    },
+    "threshold_0.2": {
+      "metrics": {
+        "cascade_acc": 0.9654278305963699,
+        "oracle_acc": 1.0,
+        "always_big_acc": 0.9844425237683665,
+        "always_small_acc": 0.3993085566119274,
+        "big_call_rate": 0.8686257562662058,
+        "oracle_big_rate": 0.6006914433880726,
+        "accuracy_gap_from_oracle": 0.03457216940363008,
+        "accuracy_gain_vs_small": 0.5661192739844425,
+        "accuracy_gap_vs_big": 0.01901469317199654,
+        "cost_saving_vs_always_big": 0.13137424373379425,
+        "cost_overhead_vs_oracle": 0.26793431287813313,
+        "true_positives": 669,
+        "false_positives": 336,
+        "true_negatives": 126,
+        "false_negatives": 26,
+        "precision": 0.6656716417910448,
+        "recall": 0.962589928057554,
+        "f1": 0.7870588235294117,
+        "threshold": 0.2
+      },
+      "threshold": 0.2
+    },
+    "threshold_0.3": {
+      "metrics": {
+        "cascade_acc": 0.9524632670700086,
+        "oracle_acc": 1.0,
+        "always_big_acc": 0.9844425237683665,
+        "always_small_acc": 0.3993085566119274,
+        "big_call_rate": 0.808124459809853,
+        "oracle_big_rate": 0.6006914433880726,
+        "accuracy_gap_from_oracle": 0.04753673292999136,
+        "accuracy_gain_vs_small": 0.5531547104580813,
+        "accuracy_gap_vs_big": 0.03197925669835782,
+        "cost_saving_vs_always_big": 0.19187554019014696,
+        "cost_overhead_vs_oracle": 0.20743301642178047,
+        "true_positives": 651,
+        "false_positives": 284,
+        "true_negatives": 178,
+        "false_negatives": 44,
+        "precision": 0.6962566844919786,
+        "recall": 0.9366906474820144,
+        "f1": 0.7987730061349694,
+        "threshold": 0.3
+      },
+      "threshold": 0.3
+    },
+    "threshold_0.4": {
+      "metrics": {
+        "cascade_acc": 0.9308556611927399,
+        "oracle_acc": 1.0,
+        "always_big_acc": 0.9844425237683665,
+        "always_small_acc": 0.3993085566119274,
+        "big_call_rate": 0.756266205704408,
+        "oracle_big_rate": 0.6006914433880726,
+        "accuracy_gap_from_oracle": 0.06914433880726016,
+        "accuracy_gain_vs_small": 0.5315471045808124,
+        "accuracy_gap_vs_big": 0.05358686257562662,
+        "cost_saving_vs_always_big": 0.24373379429559205,
+        "cost_overhead_vs_oracle": 0.15557476231633535,
+        "true_positives": 626,
+        "false_positives": 249,
+        "true_negatives": 213,
+        "false_negatives": 69,
+        "precision": 0.7154285714285714,
+        "recall": 0.9007194244604316,
+        "f1": 0.797452229299363,
+        "threshold": 0.4
+      },
+      "threshold": 0.4
+    },
+    "threshold_0.5": {
+      "metrics": {
+        "cascade_acc": 0.9144338807260155,
+        "oracle_acc": 1.0,
+        "always_big_acc": 0.9844425237683665,
+        "always_small_acc": 0.3993085566119274,
+        "big_call_rate": 0.7147796024200519,
+        "oracle_big_rate": 0.6006914433880726,
+        "accuracy_gap_from_oracle": 0.08556611927398444,
+        "accuracy_gain_vs_small": 0.5151253241140882,
+        "accuracy_gap_vs_big": 0.07000864304235091,
+        "cost_saving_vs_always_big": 0.2852203975799481,
+        "cost_overhead_vs_oracle": 0.11408815903197926,
+        "true_positives": 607,
+        "false_positives": 220,
+        "true_negatives": 242,
+        "false_negatives": 88,
+        "precision": 0.7339782345828295,
+        "recall": 0.8733812949640288,
+        "f1": 0.797634691195795,
+        "threshold": 0.5
+      },
+      "threshold": 0.5
+    }
+  },
+  "roberta": {
+    "model": "roberta-base",
+    "params": "125M",
+    "threshold": 0.3,
+    "metrics": {
+      "cascade_acc": 0.9144338807260155,
+      "oracle_acc": 1.0,
+      "always_big_acc": 0.9844425237683665,
+      "always_small_acc": 0.3993085566119274,
+      "big_call_rate": 0.7147796024200519,
+      "oracle_big_rate": 0.6006914433880726,
+      "accuracy_gap_from_oracle": 0.08556611927398444,
+      "accuracy_gain_vs_small": 0.5151253241140882,
+      "accuracy_gap_vs_big": 0.07000864304235091,
+      "cost_saving_vs_always_big": 0.2852203975799481,
+      "cost_overhead_vs_oracle": 0.11408815903197926,
+      "true_positives": 607,
+      "false_positives": 220,
+      "true_negatives": 242,
+      "false_negatives": 88,
+      "precision": 0.7339782345828295,
+      "recall": 0.8733812949640288,
+      "f1": 0.797634691195795,
+      "threshold": 0.5
+    },
+    "training": {
+      "train_loss": 0.4479931079980099,
+      "num_params": 124647170,
+      "class_weights": [
+        1.0,
+        3.0
+      ]
+    }
+  },
+  "electra": {
+    "model": "google/electra-small-discriminator",
+    "params": "14M",
+    "threshold": 0.3,
+    "metrics": {
+      "cascade_acc": 0.9844425237683665,
+      "oracle_acc": 1.0,
+      "always_big_acc": 0.9844425237683665,
+      "always_small_acc": 0.3993085566119274,
+      "big_call_rate": 1.0,
+      "oracle_big_rate": 0.6006914433880726,
+      "accuracy_gap_from_oracle": 0.015557476231633534,
+      "accuracy_gain_vs_small": 0.5851339671564391,
+      "accuracy_gap_vs_big": 0.0,
+      "cost_saving_vs_always_big": 0.0,
+      "cost_overhead_vs_oracle": 0.3993085566119274,
+      "true_positives": 695,
+      "false_positives": 462,
+      "true_negatives": 0,
+      "false_negatives": 0,
+      "precision": 0.6006914433880726,
+      "recall": 1.0,
+      "f1": 0.7505399568034556,
+      "threshold": 0.3
+    },
+    "training": {
+      "train_loss": 0.5148683439601551,
+      "num_params": 13549314,
+      "class_weights": [
+        1.0,
+        3.0
+      ]
+    }
+  },
+  "roberta_question_only": {
+    "model": "roberta-base",
+    "params": "125M",
+    "input_type": "question_only",
+    "threshold": 0.3,
+    "metrics": {
+      "cascade_acc": 0.9844425237683665,
+      "oracle_acc": 1.0,
+      "always_big_acc": 0.9844425237683665,
+      "always_small_acc": 0.3993085566119274,
+      "big_call_rate": 1.0,
+      "oracle_big_rate": 0.6006914433880726,
+      "accuracy_gap_from_oracle": 0.015557476231633534,
+      "accuracy_gain_vs_small": 0.5851339671564391,
+      "accuracy_gap_vs_big": 0.0,
+      "cost_saving_vs_always_big": 0.0,
+      "cost_overhead_vs_oracle": 0.3993085566119274,
+      "true_positives": 695,
+      "false_positives": 462,
+      "true_negatives": 0,
+      "false_negatives": 0,
+      "precision": 0.6006914433880726,
+      "recall": 1.0,
+      "f1": 0.7505399568034556,
+      "threshold": 0.3
+    },
+    "training": {
+      "train_loss": 0.5415214249582002,
+      "num_params": 124647170,
+      "class_weights": [
+        1.0,
+        3.0
+      ]
+    }
+  }
+}

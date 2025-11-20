@@ -1,0 +1,36 @@
+{
+  "train": {
+    "split": "train",
+    "total": 7024,
+    "total_original": 7473,
+    "counts": {
+      "both_wrong": 449,
+      "only_big_correct": 3728,
+      "only_small_correct": 102,
+      "both_correct": 3194
+    },
+    "acc_small": 0.46924829157175396,
+    "acc_big": 0.9854783599088838,
+    "acc_oracle": 1.0,
+    "num_correct_small": 3296,
+    "num_correct_big": 6922,
+    "num_correct_oracle": 7024
+  },
+  "test": {
+    "split": "test",
+    "total": 1157,
+    "total_original": 1319,
+    "counts": {
+      "both_wrong": 162,
+      "only_big_correct": 695,
+      "only_small_correct": 18,
+      "both_correct": 444
+    },
+    "acc_small": 0.3993085566119274,
+    "acc_big": 0.9844425237683665,
+    "acc_oracle": 1.0,
+    "num_correct_small": 462,
+    "num_correct_big": 1139,
+    "num_correct_oracle": 1157
+  }
+}
