@@ -1,0 +1,105 @@
+{
+  "timestamp": "2025-11-20T16:49:18.987712",
+  "baselines": {
+    "always_small": {
+      "accuracy": 0.3993085566119274,
+      "cost": 0.0
+    },
+    "always_big": {
+      "accuracy": 0.9844425237683665,
+      "cost": 1.0
+    },
+    "oracle": {
+      "accuracy": 1.0,
+      "cost": 0.6006914433880726
+    }
+  },
+  "roberta": {
+    "model": "roberta-base",
+    "params": "125M",
+    "metrics": {
+      "cascade_acc": 0.8305963699222126,
+      "oracle_acc": 1.0,
+      "always_big_acc": 0.9844425237683665,
+      "always_small_acc": 0.3993085566119274,
+      "big_call_rate": 0.5350043215211755,
+      "oracle_big_rate": 0.6006914433880726,
+      "accuracy_gap_from_oracle": 0.1694036300777874,
+      "accuracy_gain_vs_small": 0.4312878133102852,
+      "accuracy_gap_vs_big": 0.15384615384615385,
+      "cost_saving_vs_always_big": 0.4649956784788245,
+      "cost_overhead_vs_oracle": -0.06568712186689715,
+      "true_positives": 506,
+      "false_positives": 113,
+      "true_negatives": 349,
+      "false_negatives": 189,
+      "precision": 0.8174474959612278,
+      "recall": 0.7280575539568346,
+      "f1": 0.7701674277016742,
+      "threshold": 0.5
+    },
+    "training": {
+      "train_loss": 0.5503765192898837,
+      "num_params": 124647170
+    }
+  },
+  "electra": {
+    "model": "google/electra-small-discriminator",
+    "params": "14M",
+    "metrics": {
+      "cascade_acc": 0.8694900605012964,
+      "oracle_acc": 1.0,
+      "always_big_acc": 0.9844425237683665,
+      "always_small_acc": 0.3993085566119274,
+      "big_call_rate": 0.6335350043215212,
+      "oracle_big_rate": 0.6006914433880726,
+      "accuracy_gap_from_oracle": 0.13050993949870354,
+      "accuracy_gain_vs_small": 0.4701815038893691,
+      "accuracy_gap_vs_big": 0.11495246326707001,
+      "cost_saving_vs_always_big": 0.3664649956784788,
+      "cost_overhead_vs_oracle": 0.032843560933448576,
+      "true_positives": 554,
+      "false_positives": 179,
+      "true_negatives": 283,
+      "false_negatives": 141,
+      "precision": 0.7557980900409277,
+      "recall": 0.7971223021582734,
+      "f1": 0.7759103641456583,
+      "threshold": 0.5
+    },
+    "training": {
+      "train_loss": 0.6127826394456806,
+      "num_params": 13549314
+    }
+  },
+  "roberta_question_only": {
+    "model": "roberta-base",
+    "params": "125M",
+    "input_type": "question_only",
+    "metrics": {
+      "cascade_acc": 0.7796024200518582,
+      "oracle_acc": 1.0,
+      "always_big_acc": 0.9844425237683665,
+      "always_small_acc": 0.3993085566119274,
+      "big_call_rate": 0.5885911840968021,
+      "oracle_big_rate": 0.6006914433880726,
+      "accuracy_gap_from_oracle": 0.22039757994814174,
+      "accuracy_gain_vs_small": 0.3802938634399309,
+      "accuracy_gap_vs_big": 0.2048401037165082,
+      "cost_saving_vs_always_big": 0.4114088159031979,
+      "cost_overhead_vs_oracle": -0.012100259291270527,
+      "true_positives": 453,
+      "false_positives": 228,
+      "true_negatives": 234,
+      "false_negatives": 242,
+      "precision": 0.6651982378854625,
+      "recall": 0.6517985611510791,
+      "f1": 0.6584302325581395,
+      "threshold": 0.5
+    },
+    "training": {
+      "train_loss": 0.6814300746628732,
+      "num_params": 124647170
+    }
+  }
+}
